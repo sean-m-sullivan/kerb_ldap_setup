@@ -25,7 +25,7 @@ admin_hostname=yourdomainctl
 
 Dependencies
 ------------
-There are no requred for this role
+There are no dependencies requred for this role
 
 The dependencies for Linux, are all installed by this role.
 
