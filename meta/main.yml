@@ -1,5 +1,5 @@
 galaxy_info:
-  author: Sean Sullivan
+  author: "Sean Sullivan"
   description: "Kerberos setup for ansible control node to prep for Windows Ldap and WinRM "
   company: Red Hat
 
@@ -12,8 +12,8 @@ galaxy_info:
     versions:
       - 7
   - name: Fedora
-     versions:
-     - 26
+    versions:
+      - 26
 
   galaxy_tags: []
     - Kerberos
