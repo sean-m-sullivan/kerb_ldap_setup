@@ -54,6 +54,7 @@ Example Playbook
 
 Example Inventory File
 ----------------------
+```
 [towers]
 192.168.100.129
 
@@ -66,9 +67,9 @@ realm_name=REDHAT.LCL
 #hostname of Domain Server
 kdc_hostname=redhatdomainctl
 admin_hostname=redhatdomainctl
-
+```
 
 License
 -------
 
-BSD
+MIT
