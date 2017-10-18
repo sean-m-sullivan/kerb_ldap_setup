@@ -8,6 +8,7 @@ This role is setup to authenticate to a windows domain server with kerberos and 
 Role Variables
 --------------
 All Kerberos variables are eligble to be set. However a few are set by default. If you wish to change them, you can specifiy the variable in your inventory file. They are the following:
+```
 #defaults for Kerberos
 dns_lookup_realm: "true"
 dns_lookup_kdc: "true"
@@ -15,13 +16,16 @@ ticket_lifetime: "24h"
 renew_lifetime: "7d"
 forwardable: "true"
 rdns : "false"
+```
 
 however for a normal install, the following are needed:
+```
 #Domain name
 realm_name=YOURDOMAIN.LCL
 #hostname of Domain Server
 kdc_hostname=yourdomainctl
 admin_hostname=yourdomainctl
+```
 
 Dependencies
 ------------
