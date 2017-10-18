@@ -45,10 +45,15 @@ Example Playbook
 
 ---
 - hosts: towers
+
   remote_user: root
+
   any_errors_fatal: true
+
   gather_facts: False
+
   roles:
+
     - win_rm_kerb_role
 
 Example Inventory File
