@@ -1,6 +1,7 @@
 Win_rm_Kerb_role
 =========
 [![Galaxy](https://img.shields.io/badge/galaxy-wilk42.kerb__ldap__setup-blue.svg?style=flat)](https://galaxy.ansible.com/Wilk42/kerb_ldap_setup/)
+
 Requirements
 ------------
 This role is setup to authenticate to a windows domain server with kerberos and all required packages to run windows winrm for remote windows management with ansible.
