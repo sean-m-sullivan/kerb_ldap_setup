@@ -15,7 +15,7 @@ galaxy_info:
     versions:
       - 26
 
-  galaxy_tags: []
+  galaxy_tags:
     - Kerberos
     - WinRM
 
