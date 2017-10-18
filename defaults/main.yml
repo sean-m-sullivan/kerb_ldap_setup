@@ -1,0 +1,16 @@
+---
+# defaults file for win_rm_kerb_role
+
+#Domain name
+realm_name: YOURDOMAIN.LCL
+#hostname of Domain Server
+kdc_hostname: yourkdc
+admin_hostname: youradmin
+
+#defaults for Kerberos
+dns_lookup_realm: "true"
+dns_lookup_kdc: "true"
+ticket_lifetime: "24h"
+renew_lifetime: "7d"
+forwardable: "true"
+rdns : "false"

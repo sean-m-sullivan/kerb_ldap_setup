@@ -1,0 +1,12 @@
+[towers]
+192.168.100.129
+
+[all:vars]
+ansible_connection=ssh
+ansible_ssh_user=root
+
+#Domain name
+realm_name=REDHAT.LCL
+#hostname of Domain Server
+kdc_hostname=redhatdomainctl
+admin_hostname=redhatdomainctl
