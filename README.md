@@ -1,6 +1,6 @@
 Win_rm_Kerb_role
 =========
-
+[![Galaxy](https://img.shields.io/badge/galaxy-wilk42.kerb__ldap__setup-blue.svg?style=flat)](https://galaxy.ansible.com/Wilk42/kerb_ldap_setup/)
 Requirements
 ------------
 This role is setup to authenticate to a windows domain server with kerberos and all required packages to run windows winrm for remote windows management with ansible.
@@ -33,7 +33,7 @@ There are no dependencies requred for this role
 
 The dependencies for Linux, are all installed by this role.
 
-For Windows 2k12 and 2k16 the powershell script in files needs to be run in through a privledged Powershell. 
+For Windows 2k12 and 2k16 the powershell script in files needs to be run in through a privledged Powershell.
 
 For Windows 2k8 the folllowing is required for some ansible modules to work:
 Server 2008 R2 Service pack 1
