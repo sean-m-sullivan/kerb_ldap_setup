@@ -9,20 +9,20 @@ includedir /etc/krb5.conf.d/
 
 [libdefaults]
 
-  default_realm = {{ realm_name|upper() }}
-  dns_lookup_realm = {{ dns_lookup_realm }}
-  dns_lookup_kdc = {{ dns_lookup_kdc }}
-  ticket_lifetime = {{ ticket_lifetime }}
-  renew_lifetime = {{ renew_lifetime }}
-  rdns = {{ rdns }}
-  forwardable = {{ forwardable }}
+  default_realm = {{ krb_realm_name|upper() }}
+  dns_lookup_realm = {{ krb_dns_lookup_realm }}
+  dns_lookup_kdc = {{ krb_dns_lookup_kdc }}
+  ticket_lifetime = {{ krb_ticket_lifetime }}
+  renew_lifetime = {{ krb_renew_lifetime }}
+  rdns = {{ krb_rdns }}
+  forwardable = {{ krb_forwardable }}
 
  [realms]
-  {{ realm_name| upper() }} = {
-   kdc_server = {{ kdc_hostname }}.{{ realm_name|lower() }}
-   admin_server = {{ admin_hostname }}.{{ realm_name|lower() }}
+  {{ krb_realm_name| upper() }} = {
+   kdc_server = {{ krb_kdc_hostname }}.{{ krb_realm_name|lower() }}
+   admin_server = {{ krb_admin_hostname }}.{{ krb_realm_name|lower() }}
   }
 
  [domain_realm]
-  .{{ realm_name|lower() }} = {{ realm_name|upper() }}
- {{ realm_name|lower() }} = {{ realm_name|upper() }}
+  .{{ krb_realm_name|lower() }} = {{ krb_realm_name|upper() }}
+ {{ krb_realm_name|lower() }} = {{ krb_realm_name|upper() }}
