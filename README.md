@@ -11,21 +11,21 @@ Role Variables
 All Kerberos variables are eligble to be set. However a few are set by default. If you wish to change them, you can specifiy the variable in your inventory file. They are the following:
 ```
 #defaults for Kerberos
-dns_lookup_realm: "true"
-dns_lookup_kdc: "true"
-ticket_lifetime: "24h"
-renew_lifetime: "7d"
-forwardable: "true"
-rdns : "false"
+krb_dns_lookup_realm: "true"
+krb_dns_lookup_kdc: "true"
+krb_ticket_lifetime: "24h"
+krb_renew_lifetime: "7d"
+krb_forwardable: "true"
+krb_rdns : "false"
 ```
 
 however for a normal install, the following are needed:
 ```
 #Domain name
-realm_name=YOURDOMAIN.LCL
+krb_realm_name=YOURDOMAIN.LCL
 #hostname of Domain Server
-kdc_hostname=yourdomainctl
-admin_hostname=yourdomainctl
+krb_kdc_hostname=yourdomainctl
+krb_admin_hostname=yourdomainctl
 ```
 
 Dependencies
@@ -68,10 +68,10 @@ ansible_connection=ssh
 ansible_ssh_user=root
 
 #Domain name
-realm_name=REDHAT.LCL
+krb_realm_name=REDHAT.LCL
 #hostname of Domain Server
-kdc_hostname=redhatdomainctl
-admin_hostname=redhatdomainctl
+krb_kdc_hostname=redhatdomainctl
+krb_admin_hostname=redhatdomainctl
 ```
 
 License
